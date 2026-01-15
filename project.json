@@ -29,11 +29,17 @@
   // "target": "windows-x64",
   // Targets.
   "targets": {
-    "heirloom": {
-      // Executable or library.
+    "true": {
       "type": "executable",
-      // Additional libraries, sources
-      // and overrides of global settings here.
+      "sources-override": ["src/true/**"],
+    },
+    "false": {
+      "type": "executable",
+      "sources-override": ["src/false/**"],
+    },
+    "yes": {
+      "type": "executable",
+      "sources-override": ["src/yes/**"],
     },
   },
   // Global settings.
